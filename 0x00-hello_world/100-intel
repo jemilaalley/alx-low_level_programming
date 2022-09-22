@@ -1,2 +1,2 @@
 #!/bin/bash
-mv "$CFILE" "${CFILE%.*}.s"
+gcc –S $CFILE
