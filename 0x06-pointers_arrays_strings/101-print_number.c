@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * print_number - print numbers chars
- * @n: integer params
- * Return: Always void
+ * print_number - recursive print a number
+ * digit by digit
+ * @n: integer to print
+ * Return: void
  */
-
 void print_number(int n)
 {
 	unsigned int value = n;
