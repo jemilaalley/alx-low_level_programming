@@ -3,7 +3,7 @@
 /**
  * print_number - print numbers chars
  * @n: integer params
- * Return: void
+ * Return: Always void
  */
 
 void print_number(int n)
