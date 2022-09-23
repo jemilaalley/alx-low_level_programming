@@ -1,11 +1,10 @@
 #include "main.h"
-#include "stdio.h"
 
 /**
  * print_number - print numbers chars
- @n: integer params
- *Return: 0
-*/
+ * @n: integer params
+ * Return: void
+ */
 
 void print_number(int n)
 {
@@ -21,7 +20,9 @@ void print_number(int n)
 	}
 
 	if (num / 10)
+	{
 		print_number(num / 10);
+	}
 
 	_putchar((num % 10) + '0');
 }
