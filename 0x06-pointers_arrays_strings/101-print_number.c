@@ -1,28 +1,22 @@
-
-
 #include "main.h"
 
 /**
- * print_number - recursive print a number
- * digit by digit
- * @n: integer to print
- * Return: void
+ * print_number - print numbers chars
+ * @n: integer params
+ * Return: Always void
  */
+
 void print_number(int n)
 {
+	unsigned int value = n;
 	if (n < 0)
 	{
 		_putchar('-');
-		n = -n;
+		value = -n;
 	}
 
-	if (n < 10)
-	{
-		_putchar('0' + n);
-	} 
-	else
-	{
-		print_number(n / 10);
-		_putchar('0' + (n % 10));
-	}
+	if ((value / 10) > 0)
+		print_number(value / 10);
+
+	_putchar((value % 10) + '0');
 }
